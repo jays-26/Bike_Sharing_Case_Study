@@ -24,7 +24,8 @@ The dataset given in assignment is day.csv. Where cnt will be used as target var
 	
 
 ## Conclusions
-- dataset we have these categorical variables: season ,weathersit, yr, mnth, holiday, weekday, workingday,
+- The target variable is cnt, which is a numerical value hence have followed regression model.
+- dataset we have these categorical variables: season ,weathersit, yr, mnth, holiday, weekday, workingday( It has semantics value, hence not numerical.)
   And by seeing the boxplot we can say : 
 	1.	Bike demand is high during the fall season and low in spring.
 	2.	Bike demand is high if weather is clear or with mist cloudy while it is low when there is light snow or heavy rain.
@@ -38,7 +39,6 @@ The dataset given in assignment is day.csv. Where cnt will be used as target var
 - After building model using Linear Regression using RFE we checked the summary and found P values for all the variables is 0 except hum and holiday, which is also very less near to zero.
 - The Residual distribution is normal and mean is 0, and scatter plot shows linear relationship between x and y which shows t indicates that the assumptions of a linear regression model are being met.
 - R2 score is used to evaluate the performance of a linear regression model, in this case I have calculated the R2 score as .745 ie, 74% accuracy.
-
 
 ## Technologies Used
 - Python 3 is used with below libraries:
